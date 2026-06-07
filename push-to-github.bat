@@ -46,7 +46,7 @@ echo [4/7] Staging files...
 git add .
 echo.
 echo [5/7] Committing...
-git commit -m "Fix count-up flash-of-zero + add JSON-LD Restaurant schema (both locations) + OG/Twitter meta" 2>nul
+git commit -m "Add press wall with verified citations and championship credentials" 2>nul
 if errorlevel 1 echo Nothing new to commit, or already committed.
 echo.
 

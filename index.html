@@ -850,6 +850,74 @@ section{ padding-block: var(--section-y); position: relative; }
 }
 .review-card cite::before{ content:""; width:18px; height:1px; background: var(--sky); display:inline-block; }
 
+/* ====================== PRESS / CREDENTIALS ====================== */
+.press{ background: var(--paper-2); }
+.press .section-head h2 em{ color: var(--sky-deep); }
+.press-grid{
+  margin-top: 56px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+}
+@media (max-width: 980px){ .press-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px){ .press-grid{ grid-template-columns: 1fr; } }
+.press-card{
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px 22px 22px;
+  display: grid; grid-template-rows: auto 1fr auto;
+  gap: 14px;
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out), border-color var(--t-base) var(--ease-out);
+  position: relative;
+  min-height: 240px;
+}
+.press-card:hover{
+  transform: translateY(-3px);
+  border-color: var(--sky-soft);
+  box-shadow: 0 20px 44px -22px rgba(20,25,31,0.18);
+}
+.press-card .source{
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sky-deep); font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+.press-card .source::before{ content:""; width: 18px; height: 1px; background: currentColor; opacity: 0.7; }
+.press-card blockquote{
+  margin: 0;
+  font-family: var(--display); font-style: italic;
+  font-size: 18px; line-height: 1.32; letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.press-card .meta{
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.press-card .meta b{ color: var(--ink); font-weight: 600; }
+.press-card .meta .ext{
+  display: inline-flex; align-items: center; gap: 4px;
+  color: var(--sky-deep); font-weight: 600;
+}
+.press-card .meta .ext svg{ width: 12px; height: 12px; transition: transform var(--t-fast) var(--ease-out); }
+.press-card:hover .meta .ext svg{ transform: translate(2px, -2px); }
+/* championship credential card variant */
+.press-card.credential{
+  background: linear-gradient(180deg, var(--ink) 0%, #1c2632 100%);
+  color: #fff;
+  border-color: transparent;
+}
+.press-card.credential .source{ color: var(--sky-soft); }
+.press-card.credential blockquote{ color: #fff; font-style: normal; font-family: var(--display); font-weight: 400; }
+.press-card.credential .meta{ border-top-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); }
+.press-card.credential .meta b{ color: var(--sky-soft); }
+.press-card.credential .medal{
+  position: absolute; top: 18px; right: 18px;
+  font-family: var(--display); font-style: italic;
+  font-size: 13px; color: var(--sky-soft);
+  letter-spacing: 0.04em;
+}
+
 /* ====================== FOOTER ====================== */
 .footer{ background: var(--ink); color: rgba(255,255,255,0.78); padding: 64px 0 32px; }
 .footer .wrap{ display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 36px; }
@@ -905,6 +973,7 @@ section{ padding-block: var(--section-y); position: relative; }
     <a href="#menu">Brunch</a>
     <a href="#academy">Academy</a>
     <a href="#beans">Beans</a>
+    <a href="#press">Press</a>
   </div>
   <a class="nav-cta" href="#locations">Get Directions</a>
 </nav>
@@ -1516,6 +1585,72 @@ section{ padding-block: var(--section-y); position: relative; }
       <div class="proof-stat"><span class="num" data-count-to="30" data-suffix="K">30K</span><span class="label">Facebook followers</span></div>
       <div class="proof-stat"><span class="num" data-count-to="13.9" data-decimals="1" data-suffix="K">13.9K</span><span class="label">@bluetampcafe</span></div>
       <div class="proof-stat"><span class="num" data-count-to="11" data-suffix=" years">11 years</span><span class="label">since 2015</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRESS / CREDENTIALS ============================ -->
+<section class="press" id="press" aria-labelledby="press-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Press · Recognition · Credentials</span>
+      <h2 id="press-title">Cited and <em>certified.</em></h2>
+      <p class="lede">Three Singapore + Bangkok cafe-guide features, plus the founder's national-championship credentials. All citations link to source.</p>
+    </div>
+
+    <div class="press-grid">
+      <!-- Press card 1 — BKKMENU 2018 feature -->
+      <article class="press-card reveal">
+        <span class="source">BKKMENU · Editor's Pick</span>
+        <blockquote>“Joy in the garden — premium coffee from Australia, bakery and good brunch all day long.”</blockquote>
+        <div class="meta">
+          <span><b>BKKMENU</b> · Feb 2018</span>
+          <a class="ext" href="https://www.bkkmenu.com/eat/we-recommend/bluetamp-specialty-coffee-all-day-brunch.html" target="_blank" rel="noopener" aria-label="Read the BKKMENU feature">
+            Read
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Press card 2 — Klook Travel Blog -->
+      <article class="press-card reveal">
+        <span class="source">Klook Travel Blog</span>
+        <blockquote>“For a classic hearty brunch in a relaxed rustic setting, Bluetamp Cafe is one of the best options.”</blockquote>
+        <div class="meta">
+          <span><b>Klook</b> · Top 15 Bangkok Cafes</span>
+          <a class="ext" href="https://www.klook.com/en-SG/blog/bangkok-cafes-thailand/" target="_blank" rel="noopener" aria-label="Read the Klook feature">
+            Read
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Press card 3 — Eatbook.sg -->
+      <article class="press-card reveal">
+        <span class="source">Eatbook.sg · 20 Best Bangkok Cafes</span>
+        <blockquote>“Enjoy your brunch in a relaxed, rustic setting — a respite from the hustle and bustle of busy Bangkok city life.”</blockquote>
+        <div class="meta">
+          <span><b>Anthia Chng</b> · Dec 2025</span>
+          <a class="ext" href="https://eatbook.sg/best-bangkok-cafes/" target="_blank" rel="noopener" aria-label="Read the Eatbook feature">
+            Read
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Credential card — founder championship credits -->
+      <article class="press-card credential reveal">
+        <span class="medal">🥉 + 🥈</span>
+        <span class="source">Founder · National Awards</span>
+        <blockquote>Toon · Bronze, Thailand National Barista Championship 2020 · Silver, Leva Contest Speed Thailand 2023.</blockquote>
+        <div class="meta">
+          <span><b>Chat Thanaploypong</b> · Bluetamp founder + head roaster</span>
+          <a class="ext" href="https://www.youtube.com/@toonbluetamp" target="_blank" rel="noopener" aria-label="Toon's YouTube channel">
+            Watch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
