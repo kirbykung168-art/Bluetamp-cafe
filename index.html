@@ -324,8 +324,8 @@ section{ padding-block: var(--section-y); position: relative; }
   border-left: 2px solid var(--sky);
   padding-left: 18px;
 }
-.manifesto::before{ content: "“"; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.05em; margin-right: 2px; }
-.manifesto::after{ content: "”"; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.4em; margin-left: 2px; }
+.manifesto .quoted::before{ content: "“"; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.05em; margin-right: 2px; }
+.manifesto .quoted::after{ content: "”"; color: var(--sky-deep); font-size: 1.4em; line-height: 0; vertical-align: -0.4em; margin-left: 2px; }
 .manifesto cite{ display: block; margin-top: 10px; font-style: normal; font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sky-deep); opacity: 0.75; }
 
 .cta-row{ display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -941,6 +941,43 @@ section{ padding-block: var(--section-y); position: relative; }
 .reveal{ opacity: 0; transform: translateY(18px); transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); }
 .reveal.is-in{ opacity: 1; transform: translateY(0); }
 
+/* ====================== MOBILE POLISH (≤ 640px) ====================== */
+@media (max-width: 640px){
+  /* fix BLUETAMP wordmark cropping — fit ~390px viewport */
+  .bg-text{ font-size: clamp(54px, 13vw, 78px); line-height: 0.92; }
+  /* meet 44px tap target on primary buttons */
+  .nav-cta{ padding: 14px 18px; }
+  .cta{ padding: 18px 22px; }
+  .loc-card .pill{ padding: 13px 16px; }
+  .nav .brand{ padding: 6px 0; }
+  /* inline tel/email links in location meta — bump to ~44px tap target */
+  .loc-card .meta a{ display: inline-block; padding: 10px 2px; margin: -10px -2px; }
+  /* inline LINE link in menu prose */
+  .menu .lede a{ display: inline-block; padding: 10px 4px; margin: -10px -4px; }
+  /* press credential medal — visible emoji size, no italic */
+  .press-card.credential .medal{ font-size: 17px; font-style: normal; }
+  /* press card ext links — bigger tap area */
+  .press-card .meta .ext{ padding: 8px 4px; margin: -8px -4px; }
+  /* footer link rows — 44px tap target */
+  .footer ul li a{ display: inline-block; padding: 8px 0; }
+  .footer .brand-block p a{ padding: 2px 0; display: inline-block; }
+  /* bean row — stack price/buy under description for breathing room */
+  .bean-row{
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 14px; row-gap: 8px;
+  }
+  .bean-row .badge{ grid-row: 1 / 3; }
+  .bean-row .buy{
+    grid-column: 2;
+    text-align: left;
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding-top: 4px;
+    border-top: 1px dashed var(--line);
+  }
+  .bean-row .buy a{ display: inline-block; padding: 10px 4px; margin: -10px -4px; }
+}
+
 /* ====================== REDUCED MOTION ====================== */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
@@ -989,7 +1026,7 @@ section{ padding-block: var(--section-y); position: relative; }
         <h1>Joy of life,<br><em>through coffee.</em></h1>
         <!-- Manifesto in literal brand voice from FB header — kept as design signal of authenticity. -->
         <p class="manifesto">
-          We are small cafe in a great spot. We serve Specialty Coffee and we proud to present our Australian-style brunch — all day, every day.
+          <span class="quoted">We are small cafe in a great spot. We serve Specialty Coffee and we proud to present our Australian-style brunch — all day, every day.</span>
           <cite>— Bluetamp Cafe, in their own words</cite>
         </p>
 
@@ -1773,7 +1810,7 @@ section{ padding-block: var(--section-y); position: relative; }
         </g>
       </svg>
       <p>Bluetamp Cafe — small cafe, big coffee. Australian-style specialty coffee and all-day brunch in Bangkok since 2015. Joy of life, through coffee.</p>
-      <p style="font-size:12px; opacity:0.5;">© 2026 Bluetamp Cafe · บลูแทมป์ คาเฟ่</p>
+      <p style="font-size:12px; opacity:0.5;">© 2026 Bluetamp Cafe · <span class="thai">บลูแทมป์ คาเฟ่</span></p>
     </div>
 
     <div>
