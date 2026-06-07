@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+desktop.ini
+.vercel/
+.qa/
+# Keep originals out of git — production uses /images/optimized/ only.
+images/*.jpg
+images/*.jpeg
+images/*.png
+!images/bluetamp-logo.svg

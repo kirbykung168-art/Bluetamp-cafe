@@ -1,0 +1,14 @@
+<!-- Bluetamp Cafe logo — hand-traced SVG from the actual branded plastic cup at the cafe (Wongnai photo 2024-07-28). The mark is a stylised top-hat-shaped espresso tamper in sky-blue, with the brand wordmark "BLUETAMP / specialty coffee / since 2015" below. This file shows only the mark; the wordmark is set in HTML so it can use Fraunces. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Bluetamp">
+  <title>Bluetamp</title>
+  <g class="bt-tamper" transform-origin="100 110">
+    <!-- HANDLE TOP — flat thin cap (the "top of the hat") -->
+    <rect x="58" y="36" width="84" height="10" rx="3" fill="currentColor"/>
+    <!-- HANDLE STEM — narrower column under the cap -->
+    <rect x="78" y="46" width="44" height="36" rx="2" fill="currentColor"/>
+    <!-- BASE COLLAR — wider flange where stem meets disc -->
+    <rect x="40" y="82" width="120" height="12" rx="3" fill="currentColor"/>
+    <!-- BASE DISC — broader bottom (the puck) -->
+    <ellipse cx="100" cy="100" rx="60" ry="10" fill="currentColor"/>
+  </g>
+</svg>
