@@ -7,6 +7,130 @@
 <meta name="description" content="Bluetamp Cafe — Australian-style specialty coffee and all-day brunch in Bangkok since 2015. Lat Phrao 73 cafe + Choke Chai 4 Soi 54 Academy & Roastery. 96% recommend · 4.6★ on Google." />
 <meta name="theme-color" content="#4E9DD6" />
 
+<!-- Open Graph / social -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:site_name" content="Bluetamp Cafe" />
+<meta property="og:title" content="Bluetamp Cafe — Specialty Coffee & All-Day Brunch · Bangkok" />
+<meta property="og:description" content="Australian-style specialty coffee and all-day brunch in Bangkok since 2015. Lat Phrao 73 cafe + Choke Chai 4 Soi 54 Academy & Roastery. 96% recommend · 4.6★ on Google." />
+<meta property="og:url" content="https://bluetamp-cafe.vercel.app/" />
+<meta property="og:image" content="https://bluetamp-cafe.vercel.app/images/optimized/barista-espresso-1600w.webp" />
+<meta property="og:image:alt" content="Founder Toon pulling a shot on the La Marzocco at Bluetamp Cafe." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="restaurant:contact_info:phone_number" content="+66-2-070-9282" />
+<meta property="restaurant:contact_info:website" content="https://bluetamp-cafe.vercel.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Bluetamp Cafe — Specialty Coffee & All-Day Brunch · Bangkok" />
+<meta name="twitter:description" content="Australian-style specialty coffee + all-day brunch in Bangkok since 2015. Two locations: Lat Phrao 73 cafe + Choke Chai 4 Soi 54 Academy & Roastery." />
+<meta name="twitter:image" content="https://bluetamp-cafe.vercel.app/images/optimized/barista-espresso-1600w.webp" />
+<link rel="canonical" href="https://bluetamp-cafe.vercel.app/" />
+
+<!-- JSON-LD: Restaurant schema for both locations + parent Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bluetamp-cafe.vercel.app/#org",
+      "name": "Bluetamp Cafe",
+      "alternateName": "บลูแทมป์ คาเฟ่",
+      "url": "https://bluetamp-cafe.vercel.app/",
+      "logo": "https://bluetamp-cafe.vercel.app/images/bluetamp-logo.svg",
+      "email": "bluetamp@gmail.com",
+      "telephone": "+66-2-070-9282",
+      "foundingDate": "2015",
+      "founder": {
+        "@type": "Person",
+        "name": "Chat Thanaploypong",
+        "alternateName": "Toon",
+        "description": "Bronze medalist, Thailand National Barista Championship 2020 · Silver, Leva Contest Speed Thailand 2023. Founder + head roaster."
+      },
+      "sameAs": [
+        "https://www.facebook.com/BluetampCoffee/",
+        "https://www.instagram.com/bluetampcafe/",
+        "https://www.instagram.com/bluetamp.academy/",
+        "https://www.youtube.com/@toonbluetamp",
+        "https://lin.ee/rjt9sie",
+        "https://s.shopee.co.th/1bits1wsyp"
+      ]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://bluetamp-cafe.vercel.app/#latphrao73",
+      "name": "Bluetamp Cafe — Lat Phrao 73",
+      "alternateName": "Bluetamp Cafe สาขาลาดพร้าว 73",
+      "branchOf": { "@id": "https://bluetamp-cafe.vercel.app/#org" },
+      "url": "https://bluetamp-cafe.vercel.app/#locations",
+      "image": "https://bluetamp-cafe.vercel.app/images/optimized/interior-wide-1600w.webp",
+      "telephone": "+66-2-070-9282",
+      "email": "bluetamp@gmail.com",
+      "priceRange": "฿฿ · ฿200–400",
+      "servesCuisine": ["Specialty Coffee", "Australian Brunch", "All-Day Breakfast"],
+      "acceptsReservations": "False",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "56 Soi Lat Phrao 73",
+        "addressLocality": "Saphan Song, Wang Thonglang",
+        "addressRegion": "Bangkok",
+        "postalCode": "10310",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.7886,
+        "longitude": 100.6091
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "hasMenu": "https://lin.ee/rjt9sie",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "1700",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.facebook.com/BluetampCoffee/",
+        "https://www.instagram.com/bluetampcafe/"
+      ]
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://bluetamp-cafe.vercel.app/#chokchai4",
+      "name": "Bluetamp Academy & Roastery — Choke Chai 4 Soi 54",
+      "alternateName": "Bluetamp Academy สาขาโชคชัย 4 ซอย 54",
+      "branchOf": { "@id": "https://bluetamp-cafe.vercel.app/#org" },
+      "url": "https://bluetamp-cafe.vercel.app/#locations",
+      "image": "https://bluetamp-cafe.vercel.app/images/optimized/barista-espresso-1600w.webp",
+      "telephone": "+66-2-070-9282",
+      "email": "bluetamp@gmail.com",
+      "priceRange": "฿฿ · ฿200–400",
+      "servesCuisine": ["Specialty Coffee", "Espresso", "Single Origin Filter"],
+      "description": "Bluetamp Academy & Roastery — barista training, in-house bean roasting, and retail. Single-day foundation courses through multi-week professional intensives.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "75/7 Soi Chokchai 4 Soi 54",
+        "addressLocality": "Lat Phrao",
+        "addressRegion": "Bangkok",
+        "addressCountry": "TH"
+      },
+      "sameAs": [
+        "https://www.instagram.com/bluetamp.academy/",
+        "https://lin.ee/rjt9sie"
+      ]
+    }
+  ]
+}
+</script>
+
 <!--
   Visual inspiration: https://www.seycoffee.com (big confident headline, photo-anchored), https://onibuscoffee.com (bilingual motto in massive type, location-as-design), https://patriciacoffee.com.au (small-cafe authenticity, restrained palette), https://www.stali.com.au (editorial asymmetry), https://standartmag.com (typography masterclass) — borrowed: huge typographic moment, asymmetric hero, restraint-as-confidence.
   Motion inspiration: https://locomotive.ca + https://tympanus.net/codrops (pinned horizontal scroll story strips), https://lusion.co (subtle parallax depth), https://cuberto.com (puck-drop micro-interactions), https://hover.dev (CTA pulse, count-up on enter) — borrowed: ScrollTrigger pinned story strip, ken-burns gallery drift, palette warm tied to scroll, signature tamper-press logo press.
@@ -811,10 +935,10 @@ section{ padding-block: var(--section-y); position: relative; }
         </div>
 
         <div class="hero-stats" aria-label="Social proof">
-          <div class="stat"><span class="num" data-count-to="96" data-suffix="%">0%</span><span class="label">Recommend · 2,795</span></div>
-          <div class="stat"><span class="num" data-count-to="4.6" data-decimals="1" data-suffix="★">0★</span><span class="label">Google · 1.7K</span></div>
-          <div class="stat"><span class="num" data-count-to="30" data-suffix="K">0K</span><span class="label">Facebook</span></div>
-          <div class="stat"><span class="num" data-count-to="13.9" data-decimals="1" data-suffix="K">0K</span><span class="label">@bluetampcafe</span></div>
+          <div class="stat"><span class="num" data-count-to="96" data-suffix="%">96%</span><span class="label">Recommend · 2,795</span></div>
+          <div class="stat"><span class="num" data-count-to="4.6" data-decimals="1" data-suffix="★">4.6★</span><span class="label">Google · 1.7K</span></div>
+          <div class="stat"><span class="num" data-count-to="30" data-suffix="K">30K</span><span class="label">Facebook</span></div>
+          <div class="stat"><span class="num" data-count-to="13.9" data-decimals="1" data-suffix="K">13.9K</span><span class="label">@bluetampcafe</span></div>
         </div>
       </div>
 
@@ -1387,11 +1511,11 @@ section{ padding-block: var(--section-y); position: relative; }
 <section class="proof" aria-label="Social proof">
   <div class="wrap">
     <div class="proof-grid">
-      <div class="proof-stat"><span class="num" data-count-to="96" data-suffix="%">0%</span><span class="label">recommend · 2,795</span></div>
-      <div class="proof-stat"><span class="num" data-count-to="4.6" data-decimals="1" data-suffix="★">0★</span><span class="label">Google · 1,700+</span></div>
-      <div class="proof-stat"><span class="num" data-count-to="30" data-suffix="K">0K</span><span class="label">Facebook followers</span></div>
-      <div class="proof-stat"><span class="num" data-count-to="13.9" data-decimals="1" data-suffix="K">0K</span><span class="label">@bluetampcafe</span></div>
-      <div class="proof-stat"><span class="num" data-count-to="11" data-suffix=" years">0</span><span class="label">since 2015</span></div>
+      <div class="proof-stat"><span class="num" data-count-to="96" data-suffix="%">96%</span><span class="label">recommend · 2,795</span></div>
+      <div class="proof-stat"><span class="num" data-count-to="4.6" data-decimals="1" data-suffix="★">4.6★</span><span class="label">Google · 1,700+</span></div>
+      <div class="proof-stat"><span class="num" data-count-to="30" data-suffix="K">30K</span><span class="label">Facebook followers</span></div>
+      <div class="proof-stat"><span class="num" data-count-to="13.9" data-decimals="1" data-suffix="K">13.9K</span><span class="label">@bluetampcafe</span></div>
+      <div class="proof-stat"><span class="num" data-count-to="11" data-suffix=" years">11 years</span><span class="label">since 2015</span></div>
     </div>
   </div>
 </section>
@@ -1603,13 +1727,14 @@ section{ padding-block: var(--section-y); position: relative; }
     const n = decimals ? v.toFixed(decimals) : Math.round(v).toString();
     return n + (suffix || '');
   };
-  // Pre-fill all stats with the target value so first paint never shows 0 — count-up will overwrite as IO fires.
-  document.querySelectorAll('[data-count-to]').forEach(el => {
-    const target = parseFloat(el.dataset.countTo);
-    const decimals = parseInt(el.dataset.decimals || '0', 10);
-    const suffix = el.dataset.suffix || '';
-    if (reduce) el.textContent = formatNum(target, decimals, suffix);
-  });
+  // HTML pre-fills each stat with the final value so first paint is always correct (no flash of 0).
+  // If motion is allowed, reset to 0 on bind so the IO can animate up. If reduced-motion, leave alone.
+  if (!reduce){
+    document.querySelectorAll('[data-count-to]').forEach(el => {
+      const suffix = el.dataset.suffix || '';
+      el.textContent = '0' + suffix;
+    });
+  }
   const cio = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
